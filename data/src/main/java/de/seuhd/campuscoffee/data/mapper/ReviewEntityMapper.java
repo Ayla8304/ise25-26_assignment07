@@ -7,6 +7,7 @@ import org.mapstruct.Mapping;
 import org.mapstruct.MappingTarget;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 
+
 @Mapper(componentModel = "spring",
         uses = {PosEntityMapper.class, UserEntityMapper.class})
 @ConditionalOnMissingBean // prevent IntelliJ warning about duplicate beans
